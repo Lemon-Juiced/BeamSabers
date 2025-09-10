@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "beam_sabers:item/green_stellar_shard"
+    "layer0": "beam_sabers:item/white_stellar_shard"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "beam_sabers:blank_stellar_shard",
+    "beam_sabers:white_stellar_shard",
+    "beam_sabers:light_gray_stellar_shard",
+    "beam_sabers:gray_stellar_shard",
+    "beam_sabers:black_stellar_shard",
+    "beam_sabers:brown_stellar_shard",
+    "beam_sabers:red_stellar_shard",
+    "beam_sabers:orange_stellar_shard",
+    "beam_sabers:yellow_stellar_shard",
+    "beam_sabers:lime_stellar_shard",
+    "beam_sabers:green_stellar_shard",
+    "beam_sabers:cyan_stellar_shard",
+    "beam_sabers:light_blue_stellar_shard",
+    "beam_sabers:blue_stellar_shard",
+    "beam_sabers:purple_stellar_shard",
+    "beam_sabers:magenta_stellar_shard",
+    "beam_sabers:pink_stellar_shard"
+  ]
+}
+

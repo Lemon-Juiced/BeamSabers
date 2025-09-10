@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "beam_sabers:red_stellar_shard"
+    },
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "result": {
+    "id": "beam_sabers:awakened_red_stellar_shard",
+    "count": 1
+  }
+}

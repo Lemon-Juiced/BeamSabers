@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "beam_sabers:stellar_shards"
+    },
+    {
+      "item": "minecraft:light_gray_dye"
+    }
+  ],
+  "result": {
+    "id": "beam_sabers:light_gray_stellar_shard",
+    "count": 1
+  }
+}
