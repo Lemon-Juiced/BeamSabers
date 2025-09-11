@@ -10,7 +10,7 @@ Inspired by Tinker's Construct and classic sci-fi, this mod lets you craft and w
 - **Inspired by Tinker's Construct and Star Wars:** Familiar mechanics with a sci-fi twist.  
 
 ## About
-Created for CurseForge's Forge the Future: Minecraft Modjam 2025.  
+Created for CurseForge's [Forge the Future: Minecraft Modjam 2025](https://mod.curseforge.com/minecraft-modjam/).  
 
 ## External Tools
 - [MonoColor](https://github.com/scalar-studios/MonoColor) - A little C++ application to help create textures from monochrome images.  
