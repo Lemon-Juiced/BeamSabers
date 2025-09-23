@@ -2,12 +2,15 @@ package site.scalarstudios.beam_sabers.item;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Tiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import site.scalarstudios.beam_sabers.BeamSabers;
 import site.scalarstudios.beam_sabers.BeamSabersUtilLists;
 import site.scalarstudios.beam_sabers.item.custom.AwakenedStellarShardItem;
 import site.scalarstudios.beam_sabers.item.custom.StellarShardItem;
+import site.scalarstudios.beam_sabers.item.custom.sword.CurvedHiltSaberItem;
+import site.scalarstudios.beam_sabers.item.custom.sword.GreatSaberItem;
 
 import java.util.ArrayList;
 import java.util.function.Supplier;
@@ -17,6 +20,10 @@ public class BeamSabersItems {
 
     // Stellar Shards
     public static final Supplier<Item> BLANK_STELLAR_SHARD = ITEMS.register("blank_stellar_shard", () -> new StellarShardItem(new Item.Properties()));
+
+    // Beam Sabers
+    // public static final Supplier<Item> RED_GREAT_BEAM_SABER = ITEMS.register("red_great_beam_saber", () -> new GreatSaberItem(new Item.Properties()));
+    public static final Supplier<Item> RED_CURVED_HILT_BEAM_SABER = ITEMS.register("red_curved_hilt_beam_saber", () -> new CurvedHiltSaberItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         generateStellarShards();

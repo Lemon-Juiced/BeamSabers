@@ -9,6 +9,7 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import site.scalarstudios.beam_sabers.creativetab.BeamSabersCreativeTabs;
 import site.scalarstudios.beam_sabers.item.BeamSabersItems;
+import site.scalarstudios.beam_sabers.tag.BeamSabersTags;
 
 @Mod(BeamSabers.MODID)
 public class BeamSabers {
@@ -19,6 +20,9 @@ public class BeamSabers {
 
         // Register Items
         BeamSabersItems.register(modEventBus);
+
+        // Register Tags
+        BeamSabersTags.init();
 
         // Register Creative Tab
         BeamSabersCreativeTabs.register(modEventBus);

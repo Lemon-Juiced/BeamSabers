@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "beam_sabers:item/red_curved_hilt_beam_saber"
+  }
+}

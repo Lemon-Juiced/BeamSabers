@@ -8,8 +8,8 @@ Inspired by Tinker's Construct and classic sci-fi, this mod lets you craft and w
 - **Customizable Colors:** Choose your saber's blade color to match your style.  
 - **Multiple Styles:** Craft sabers in multiple forms:  
   - Standard Beam Saber (Broadsword)
-  - Great Saber (Longsword): Allows the user to lunge.
-  - Curved-Hilt Saber (Rapier): Allows the user to backstep and break shields.
+  - Great Beam Saber (Longsword): Allows the user to lunge.
+  - Curved-Hilt Beam Saber (Rapier): Allows the user to backstep and break shields.
   - Shoto Beam Saber (Cutlass): Shorter reach but higher critical hit chance.
 - **Inspired by Tinker's Construct and Star Wars:** Familiar mechanics with a sci-fi twist.  
 

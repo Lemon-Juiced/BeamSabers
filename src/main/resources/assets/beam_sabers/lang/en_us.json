@@ -33,5 +33,8 @@
   "item.beam_sabers.magenta_stellar_shard": "Magenta Stellar Shard",
   "item.beam_sabers.awakened_magenta_stellar_shard": "Awakened Magenta Stellar Shard",
   "item.beam_sabers.pink_stellar_shard": "Pink Stellar Shard",
-  "item.beam_sabers.awakened_pink_stellar_shard": "Awakened Pink Stellar Shard"
+  "item.beam_sabers.awakened_pink_stellar_shard": "Awakened Pink Stellar Shard",
+
+  "item.beam_sabers.red_great_beam_saber": "Red Great Beam Saber",
+  "item.beam_sabers.red_curved_hilt_beam_saber": "Red Curved Hilt Beam Saber"
 }
