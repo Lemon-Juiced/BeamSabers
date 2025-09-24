@@ -10,6 +10,7 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import site.scalarstudios.beam_sabers.BeamSabers;
+import site.scalarstudios.beam_sabers.block.BeamSabersBlocks;
 import site.scalarstudios.beam_sabers.item.BeamSabersItems;
 import site.scalarstudios.beam_sabers.item.custom.AwakenedStellarShardItem;
 import site.scalarstudios.beam_sabers.item.custom.StellarShardItem;
@@ -38,6 +39,14 @@ public class BeamSabersCreativeTabs {
                 if (item.get() instanceof AwakenedStellarShardItem) event.accept(item.get());
             for (DeferredHolder<Item, ? extends Item> item : BeamSabersItems.ITEMS.getEntries())
                 if (item.get() instanceof StandardSaberItem) event.accept(item.get());
+            event.accept(BeamSabersBlocks.BLANK_STELLAR_ORE.get());
+            event.accept(BeamSabersBlocks.DEEPSLATE_BLANK_STELLAR_ORE.get());
+            event.accept(BeamSabersBlocks.NETHER_BLANK_STELLAR_ORE.get());
+            event.accept(BeamSabersBlocks.END_BLANK_STELLAR_ORE.get());
+            event.accept(BeamSabersBlocks.GREEN_STELLAR_ORE.get());
+            event.accept(BeamSabersBlocks.DEEPSLATE_BLUE_STELLAR_ORE.get());
+            event.accept(BeamSabersBlocks.NETHER_RED_STELLAR_ORE.get());
+            event.accept(BeamSabersBlocks.END_PURPLE_STELLAR_ORE.get());
         }
     }
 

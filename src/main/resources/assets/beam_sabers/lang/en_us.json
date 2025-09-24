@@ -106,6 +106,15 @@
   "item.beam_sabers.pink_curved_hilt_beam_saber": "Pink Curved Hilt Beam Saber",
   "item.beam_sabers.pink_shoto_beam_saber": "Pink Shoto Beam Saber",
 
+  "block.beam_sabers.blank_stellar_ore": "Blank Stellar Ore",
+  "block.beam_sabers.deepslate_blank_stellar_ore": "Deepslate Blank Stellar Ore",
+  "block.beam_sabers.nether_blank_stellar_ore": "Nether Blank Stellar Ore",
+  "block.beam_sabers.end_blank_stellar_ore": "End Blank Stellar Ore",
+  "block.beam_sabers.green_stellar_ore": "Green Stellar Ore",
+  "block.beam_sabers.deepslate_blue_stellar_ore": "Deepslate Blue Stellar Ore",
+  "block.beam_sabers.nether_red_stellar_ore": "Nether Red Stellar Ore",
+  "block.beam_sabers.end_purple_stellar_ore": "End Purple Stellar Ore",
+
   "tooltip.beam_sabers.great_saber": "Right Click To Fling Yourself Forward",
   "tooltip.beam_sabers.curved_hilt_saber": "Right Click To Backpedal",
   "tooltip.beam_sabers.shoto_saber": "Shorter Range, Higher Critical Hit Chance"

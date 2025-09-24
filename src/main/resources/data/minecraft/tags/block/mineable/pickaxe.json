@@ -1,0 +1,13 @@
+{
+  "values": [
+    "beam_sabers:blank_stellar_ore",
+    "beam_sabers:deepslate_blank_stellar_ore",
+    "beam_sabers:nether_blank_stellar_ore",
+    "beam_sabers:end_blank_stellar_ore",
+    "beam_sabers:green_stellar_ore",
+    "beam_sabers:deepslate_blue_stellar_ore",
+    "beam_sabers:nether_red_stellar_ore",
+    "beam_sabers:end_purple_stellar_ore"
+  ],
+  "replace": false
+}

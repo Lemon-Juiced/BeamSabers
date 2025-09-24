@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "beam_sabers:block/end_blank_stellar_ore"
+  }
+}

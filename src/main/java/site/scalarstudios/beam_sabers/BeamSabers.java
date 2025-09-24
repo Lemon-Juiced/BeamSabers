@@ -7,6 +7,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import site.scalarstudios.beam_sabers.block.BeamSabersBlocks;
 import site.scalarstudios.beam_sabers.creativetab.BeamSabersCreativeTabs;
 import site.scalarstudios.beam_sabers.item.BeamSabersItems;
 import site.scalarstudios.beam_sabers.tag.BeamSabersTags;
@@ -18,8 +19,9 @@ public class BeamSabers {
     public BeamSabers(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
-        // Register Items
+        // Register Items & Blocks
         BeamSabersItems.register(modEventBus);
+        BeamSabersBlocks.register(modEventBus);
 
         // Register Tags
         BeamSabersTags.init();

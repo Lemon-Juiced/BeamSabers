@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "beam_sabers:block/deepslate_blue_stellar_ore"
+  }
+}
