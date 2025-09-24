@@ -1,5 +1,6 @@
 package site.scalarstudios.beam_sabers.item.custom.sword;
 
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.LivingEntity;
@@ -7,14 +8,17 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.phys.Vec3;
 import site.scalarstudios.beam_sabers.item.custom.tier.BeamSabersTiers;
+
+import java.util.List;
 
 /**
  * Traditional sword item, but allows the player backpedal when right-clicked.
  * Additionally, the sword can be used to break shields (much like an axe).
  */
-public class CurvedHiltSaberItem extends SwordItem {
+public class CurvedHiltSaberItem extends StandardSaberItem {
     public CurvedHiltSaberItem(Properties properties) {
         super(BeamSabersTiers.CURVED_HILT_TIER, properties.attributes(SwordItem.createAttributes(BeamSabersTiers.CURVED_HILT_TIER, 3, -2.4F)));
     }
@@ -42,5 +46,10 @@ public class CurvedHiltSaberItem extends SwordItem {
             player.fallDistance = 0.0F;
         }
         return InteractionResultHolder.success(player.getItemInHand(hand)); // No cooldown
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        tooltipComponents.add(Component.translatable("tooltip.beam_sabers.curved_hilt_saber"));
     }
 }

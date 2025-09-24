@@ -1,5 +1,6 @@
 package site.scalarstudios.beam_sabers.item.custom.sword;
 
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -8,11 +9,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import site.scalarstudios.beam_sabers.item.custom.tier.BeamSabersTiers;
 
+import java.util.List;
+
 /**
  * Traditional sword item, but allows the player to fling themselves forward when right-clicked.
  * The fling ability has a cooldown to prevent spamming.
  */
-public class GreatSaberItem extends SwordItem {
+public class GreatSaberItem extends StandardSaberItem {
 
     public GreatSaberItem(Properties properties) {
         super(BeamSabersTiers.GREAT_TIER, properties.attributes(SwordItem.createAttributes(BeamSabersTiers.GREAT_TIER, 3, -2.4F)));
@@ -32,5 +35,10 @@ public class GreatSaberItem extends SwordItem {
             return InteractionResultHolder.success(player.getItemInHand(hand));
         }
         return InteractionResultHolder.fail(player.getItemInHand(hand));
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        tooltipComponents.add(Component.translatable("tooltip.beam_sabers.great_saber"));
     }
 }

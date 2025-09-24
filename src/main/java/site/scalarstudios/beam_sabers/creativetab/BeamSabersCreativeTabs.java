@@ -13,6 +13,7 @@ import site.scalarstudios.beam_sabers.BeamSabers;
 import site.scalarstudios.beam_sabers.item.BeamSabersItems;
 import site.scalarstudios.beam_sabers.item.custom.AwakenedStellarShardItem;
 import site.scalarstudios.beam_sabers.item.custom.StellarShardItem;
+import site.scalarstudios.beam_sabers.item.custom.sword.StandardSaberItem;
 
 public class BeamSabersCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BeamSabers.MODID);
@@ -30,8 +31,8 @@ public class BeamSabersCreativeTabs {
                     event.accept(item.get());
             for (DeferredHolder<Item, ? extends Item> item : BeamSabersItems.ITEMS.getEntries())
                 if (item.get() instanceof AwakenedStellarShardItem) event.accept(item.get());
-            event.accept(BeamSabersItems.RED_GREAT_BEAM_SABER.get());
-            event.accept(BeamSabersItems.RED_CURVED_HILT_BEAM_SABER.get());
+            for (DeferredHolder<Item, ? extends Item> item : BeamSabersItems.ITEMS.getEntries())
+                if (item.get() instanceof StandardSaberItem) event.accept(item.get());
         }
     }
 

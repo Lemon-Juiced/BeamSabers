@@ -11,6 +11,7 @@ import site.scalarstudios.beam_sabers.item.custom.AwakenedStellarShardItem;
 import site.scalarstudios.beam_sabers.item.custom.StellarShardItem;
 import site.scalarstudios.beam_sabers.item.custom.sword.CurvedHiltSaberItem;
 import site.scalarstudios.beam_sabers.item.custom.sword.GreatSaberItem;
+import site.scalarstudios.beam_sabers.item.custom.sword.StandardSaberItem;
 
 import java.util.ArrayList;
 import java.util.function.Supplier;
@@ -22,11 +23,12 @@ public class BeamSabersItems {
     public static final Supplier<Item> BLANK_STELLAR_SHARD = ITEMS.register("blank_stellar_shard", () -> new StellarShardItem(new Item.Properties()));
 
     // Beam Sabers
-    public static final Supplier<Item> RED_GREAT_BEAM_SABER = ITEMS.register("red_great_beam_saber", () -> new GreatSaberItem(new Item.Properties()));
-    public static final Supplier<Item> RED_CURVED_HILT_BEAM_SABER = ITEMS.register("red_curved_hilt_beam_saber", () -> new CurvedHiltSaberItem(new Item.Properties()));
+    //public static final Supplier<Item> RED_GREAT_BEAM_SABER = ITEMS.register("red_great_beam_saber", () -> new GreatSaberItem(new Item.Properties()));
+    //public static final Supplier<Item> RED_CURVED_HILT_BEAM_SABER = ITEMS.register("red_curved_hilt_beam_saber", () -> new CurvedHiltSaberItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         generateStellarShards();
+        generateBeamSabers();
         ITEMS.register(eventBus);
     }
 
@@ -37,4 +39,15 @@ public class BeamSabersItems {
             ITEMS.register("awakened_" + colors.get(i) + "_stellar_shard", () -> new AwakenedStellarShardItem((new Item.Properties()).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)));
         }
     }
+
+    public static void generateBeamSabers() {
+        ArrayList<String> colors = BeamSabersUtilLists.getColors();
+        for (int i = 0; i < colors.size(); i++) {
+            ITEMS.register(colors.get(i) + "_beam_saber", () -> new StandardSaberItem(new Item.Properties()));
+            ITEMS.register(colors.get(i) + "_great_beam_saber", () -> new GreatSaberItem(new Item.Properties()));
+            ITEMS.register(colors.get(i) + "_curved_hilt_beam_saber", () -> new CurvedHiltSaberItem(new Item.Properties()));
+        }
+    }
+
+
 }
