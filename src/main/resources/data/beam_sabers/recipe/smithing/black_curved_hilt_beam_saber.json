@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "beam_sabers:awakened_black_stellar_shard"
+  },
+  "base": {
+    "item": "beam_sabers:hilt"
+  },
+  "result": {
+    "id": "beam_sabers:black_curved_hilt_beam_saber",
+    "count": 1
+  },
+  "template": {
+    "item": "beam_sabers:curved_hilt_sword_smithing_template"
+  }
+}

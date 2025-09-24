@@ -22,6 +22,11 @@ public class BeamSabersItems {
 
     // Manually Registered Items
     public static final Supplier<Item> BLANK_STELLAR_SHARD = ITEMS.register("blank_stellar_shard", () -> new StellarShardItem(new Item.Properties()));
+    public static final Supplier<Item> HILT = ITEMS.register("hilt", () -> new Item(new Item.Properties()));
+    public static final Supplier<Item> STANDARD_SWORD_SMITHING_TEMPLATE = ITEMS.register("standard_sword_smithing_template", () -> new Item(new Item.Properties()));
+    public static final Supplier<Item> GREAT_SWORD_SMITHING_TEMPLATE = ITEMS.register("great_sword_smithing_template", () -> new Item(new Item.Properties()));
+    public static final Supplier<Item> CURVED_HILT_SWORD_SMITHING_TEMPLATE = ITEMS.register("curved_hilt_sword_smithing_template", () -> new Item(new Item.Properties()));
+    public static final Supplier<Item> SHOTO_SWORD_SMITHING_TEMPLATE = ITEMS.register("shoto_sword_smithing_template", () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         generateStellarShards();

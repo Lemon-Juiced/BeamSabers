@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "beam_sabers:awakened_green_stellar_shard"
+  },
+  "base": {
+    "item": "beam_sabers:hilt"
+  },
+  "result": {
+    "id": "beam_sabers:green_great_beam_saber",
+    "count": 1
+  },
+  "template": {
+    "item": "beam_sabers:great_sword_smithing_template"
+  }
+}

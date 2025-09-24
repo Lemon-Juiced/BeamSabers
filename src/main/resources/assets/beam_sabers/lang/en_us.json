@@ -2,6 +2,12 @@
   "itemGroup.beam_sabers.items": "Beam Sabers: Items",
 
   "item.beam_sabers.blank_stellar_shard": "Blank Stellar Shard",
+  "item.beam_sabers.hilt": "Hilt",
+  "item.beam_sabers.standard_sword_smithing_template": "Standard Sword Smithing Template",
+  "item.beam_sabers.great_sword_smithing_template": "Great Sword Smithing Template",
+  "item.beam_sabers.curved_hilt_sword_smithing_template": "Curved Hilt Sword Smithing Template",
+  "item.beam_sabers.shoto_sword_smithing_template": "Shoto Sword Smithing Template",
+
   "item.beam_sabers.white_stellar_shard": "White Stellar Shard",
   "item.beam_sabers.awakened_white_stellar_shard": "Awakened White Stellar Shard",
   "item.beam_sabers.light_gray_stellar_shard": "Light Gray Stellar Shard",

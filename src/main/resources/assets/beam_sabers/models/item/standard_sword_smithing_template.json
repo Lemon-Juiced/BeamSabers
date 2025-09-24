@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "beam_sabers:item/standard_sword_smithing_template"
+  }
+}
