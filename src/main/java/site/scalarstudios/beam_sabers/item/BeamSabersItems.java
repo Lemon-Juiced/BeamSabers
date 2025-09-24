@@ -22,7 +22,7 @@ public class BeamSabersItems {
     public static final Supplier<Item> BLANK_STELLAR_SHARD = ITEMS.register("blank_stellar_shard", () -> new StellarShardItem(new Item.Properties()));
 
     // Beam Sabers
-    // public static final Supplier<Item> RED_GREAT_BEAM_SABER = ITEMS.register("red_great_beam_saber", () -> new GreatSaberItem(new Item.Properties()));
+    public static final Supplier<Item> RED_GREAT_BEAM_SABER = ITEMS.register("red_great_beam_saber", () -> new GreatSaberItem(new Item.Properties()));
     public static final Supplier<Item> RED_CURVED_HILT_BEAM_SABER = ITEMS.register("red_curved_hilt_beam_saber", () -> new CurvedHiltSaberItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus){

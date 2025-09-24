@@ -7,7 +7,8 @@ import net.neoforged.neoforge.common.SimpleTier;
 import site.scalarstudios.beam_sabers.tag.BeamSabersTags;
 
 public class BeamSabersTiers {
-    public static final Tier CURVED_HILT_TIER = new SimpleTier(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4062, 10.0F, 2.0F, 20, () -> Ingredient.of(BeamSabersTags.Items.AWAKENED_STELLAR_SHARDS));
+    public static final Tier CURVED_HILT_TIER = new SimpleTier(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 2031, 9.0F, 2.0F, 20, () -> Ingredient.of(BeamSabersTags.Items.AWAKENED_STELLAR_SHARDS));
+    public static final Tier GREAT_TIER = new SimpleTier(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 2031, 9.0F, 4.0F, 20, () -> Ingredient.of(BeamSabersTags.Items.AWAKENED_STELLAR_SHARDS));
 
     // Vanilla Reference:
     // WOOD      = new SimpleTier(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 59, 2.0F, 0.0F, 15, () -> Ingredient.of(ItemTags.PLANKS));

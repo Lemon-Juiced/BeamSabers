@@ -30,7 +30,7 @@ public class BeamSabersCreativeTabs {
                     event.accept(item.get());
             for (DeferredHolder<Item, ? extends Item> item : BeamSabersItems.ITEMS.getEntries())
                 if (item.get() instanceof AwakenedStellarShardItem) event.accept(item.get());
-            //event.accept(BeamSabersItems.RED_GREAT_BEAM_SABER.get());
+            event.accept(BeamSabersItems.RED_GREAT_BEAM_SABER.get());
             event.accept(BeamSabersItems.RED_CURVED_HILT_BEAM_SABER.get());
         }
     }
