@@ -2,6 +2,18 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "beam_sabers:item/curved_hilt_hilt",
-    "layer1": "beam_sabers:item/curved_hilt_black_blade"
+    "layer1": "beam_sabers:item/black_curved_hilt_blade"
+  },
+  "display": {
+  "thirdperson_righthand": {
+    "rotation": [0, 90, -35],
+    "translation": [0, 4.0, 2.0],
+    "scale": [0.85, 0.85, 0.85]
+  },
+  "thirdperson_lefthand": {
+    "rotation": [0, 90, -35],
+    "translation": [0, 4.0, 2.0],
+    "scale": [0.85, 0.85, 0.85]
   }
+}
 }

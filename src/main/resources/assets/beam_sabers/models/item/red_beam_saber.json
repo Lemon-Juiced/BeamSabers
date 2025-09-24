@@ -2,6 +2,6 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "beam_sabers:item/standard_hilt",
-    "layer1": "beam_sabers:item/standard_red_blade"
+    "layer1": "beam_sabers:item/red_standard_blade"
   }
 }
