@@ -1,13 +1,17 @@
 package site.scalarstudios.beam_sabers.item.custom.sword;
 
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.phys.Vec3;
 import site.scalarstudios.beam_sabers.item.custom.tier.BeamSabersTiers;
 
 /**
- * Traditional sword item, but allows the player to do.
+ * Traditional sword item, but allows the player backpedal when right-clicked.
  * Additionally, the sword can be used to break shields (much like an axe).
  */
 public class CurvedHiltSaberItem extends SwordItem {
@@ -24,5 +28,19 @@ public class CurvedHiltSaberItem extends SwordItem {
             }
         }
         return super.hurtEnemy(stack, target, attacker);
+    }
+
+    @Override
+    public InteractionResultHolder<ItemStack> use(net.minecraft.world.level.Level level, Player player, InteractionHand hand) {
+        if (!level.isClientSide) {
+            Vec3 look = player.getLookAngle();
+            double backpedalStrength = 0.5;
+            double upwardBoost = 0.0;
+            Vec3 backward = new Vec3(-look.x, upwardBoost, -look.z).normalize().scale(backpedalStrength);
+            player.setDeltaMovement(backward);
+            player.hurtMarked = true;
+            player.fallDistance = 0.0F;
+        }
+        return InteractionResultHolder.success(player.getItemInHand(hand)); // No cooldown
     }
 }
