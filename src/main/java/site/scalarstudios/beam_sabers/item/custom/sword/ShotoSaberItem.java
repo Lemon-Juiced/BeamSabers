@@ -15,8 +15,8 @@ import java.util.List;
  * The tradeoff is that it has a higher chance to critically hit.
  */
 public class ShotoSaberItem extends StandardSaberItem implements LimitedReachItem {
-    private static final double CRIT_CHANCE = 0.5; // 50% chance to crit
-    private static final double CRIT_MULTIPLIER = 1.5; // 50% more damage on crit
+    private static final double CRIT_CHANCE = 0.1;
+    private static final double CRIT_MULTIPLIER = 1.1;
 
     public ShotoSaberItem(Properties properties) {
         super(properties);
