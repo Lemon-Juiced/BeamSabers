@@ -21,6 +21,12 @@ saber_types = [
     hilt: 'curved_hilt_hilt',
     blade: '%{color}_curved_hilt_blade',
     name: '%{color}_curved_hilt_beam_saber'
+  },
+  {
+    type: 'shoto',
+    hilt: 'great_hilt',
+    blade: '%{color}_shoto_blade',
+    name: '%{color}_shoto_beam_saber'
   }
 ]
 

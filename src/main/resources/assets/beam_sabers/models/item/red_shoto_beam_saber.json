@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "beam_sabers:item/great_hilt",
+    "layer1": "beam_sabers:item/red_shoto_blade"
+  }
+}
